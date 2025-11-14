@@ -87,8 +87,8 @@ public class MemberDAO {
 				} catch (Exception e) {
 					e.printStackTrace();
 					
-				}// try2
-		}// try1
+				}
+		}// try
 		
 		return result;
 		
@@ -138,7 +138,7 @@ public class MemberDAO {
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
-		} //finally
+		} //try
 		
 		return mvo;
 		
@@ -183,9 +183,51 @@ public class MemberDAO {
 					
 				}
 				
-		}// end finally
+		}// end try
 		
 		return result;		
 		
 	}// end confirmID
+
+	// 회원가입 정보 DB저장
+	public int insertMember(MemberVO mvo) {
+		
+		int result = -1;
+		
+		String sql = "insert into member values(?, ?, ?, ?, ?, ?)";
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			
+			con = getConnection();
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, mvo.getName()); 
+			pstmt.setString(2, mvo.getUserid()); 
+			pstmt.setString(3, mvo.getPwd()); 
+			pstmt.setString(4, mvo.getEmail());
+			pstmt.setString(5, mvo.getPhone()); 
+			pstmt.setInt(6, mvo.getAdmin()); 
+			
+			result = pstmt.executeUpdate(); 
+			
+		}catch(Exception e){
+			e.printStackTrace();
+			
+		}finally{
+				try {
+					pstmt.close();
+					con.close();
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+					
+				}
+				
+		}// end try
+		
+		return result;
+
+	}// end insert
 }
