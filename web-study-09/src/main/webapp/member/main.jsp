@@ -16,6 +16,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!-- 메소드 생략 = get 방식 -->
 	<form action="logout.do">
 		<table>
 			<tr>
