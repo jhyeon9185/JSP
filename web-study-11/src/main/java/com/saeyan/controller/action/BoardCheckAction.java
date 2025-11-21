@@ -28,6 +28,7 @@ public class BoardCheckAction implements Action{
 		//	3. 입력받은 것과 DB에 있는 pass 비교
 		if(pass.equals(vo.getPass())) {
 			url = "/board/checkSuccess.jsp";
+			
 		}else {
 			url = "/board/boardCheckPass.jsp";
 			request.setAttribute("message", "비밀번호가 틀렸습니다.");
