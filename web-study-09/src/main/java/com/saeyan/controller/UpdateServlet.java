@@ -33,8 +33,6 @@ public class UpdateServlet extends HttpServlet {
 		.forward(request, response);
 		
 		
-		
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

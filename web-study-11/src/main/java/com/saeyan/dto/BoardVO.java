@@ -25,7 +25,6 @@ public class BoardVO {
 	private int readcount;
 	private Timestamp writedate;
 	
-	
 	public int getNum() {
 		return num;
 	}
@@ -74,12 +73,12 @@ public class BoardVO {
 	public void setWritedate(Timestamp writedate) {
 		this.writedate = writedate;
 	}
+	
 	@Override
 	public String toString() {
 		return "BoardVO [num=" + num + ", name=" + name + ", email=" + email + ", pass=" + pass + ", title=" + title
 				+ ", content=" + content + ", readcount=" + readcount + ", writedate=" + writedate + "]";
 	}
-	
 	
 	
 }
