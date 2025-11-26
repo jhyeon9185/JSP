@@ -1,0 +1,72 @@
+html, body{
+	font-family: 'Pretendard GOV', sans-serif;
+}
+
+/* 전체 래퍼 */
+#wrap {
+    width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 테이블 디자인 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th {
+    background: #555;       /* 이미지에서 보이던 파란색 */
+    color: white;
+    width: 150px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+table td {
+    padding: 15px;
+    background: #ffffff;
+    font-size: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 15px;
+}
+
+/* 버튼 영역 */
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    transition: 0.2s;
+}
+
+input[type="button"]:hover {
+    background-color: #555;
+}

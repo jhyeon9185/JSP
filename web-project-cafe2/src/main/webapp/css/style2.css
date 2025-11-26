@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Pretendard GOV', sans-serif;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    color: #222;
+    min-width: 370px;
+    overflow-x: clip;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+/* 헤더 영역 (메뉴, 로그인) */
+
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #2c2c2c;
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1700px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 40px; 
+}
+
+.logo {
+    flex: 0 0 270px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+}
+
+.main-menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.coffe_nav {
+    position: relative;
+    flex: 1 1 0%;
+    text-align: center;
+}
+
+.coffe_nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0 38px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main_menu .coffe_nav > a span {
+    position: relative;
+}
+
+.main_menu .coffe_nav .coffe_sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .4s 
+    ease, transform .24s 
+    ease, visibility 0s 
+    linear .4s;
+    transform: translateY(-6px);
+    transition-delay: 0s, 0s, 0s;
+}
+
+.coffe_login > a{
+    font-weight: 300;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+.user-menu {
+    display: flex;
+    gap: 25px; 
+}
+
+.user-menu a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+/* 슬라이더 영역 */
+.slider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slider img {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 푸터영역 */
+footer {
+    background: #fff;
+}
+
+footer .inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 15px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+}
+
+.copy {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+/* 로그인 페이지 */
+
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1700px;
+    
+}
+
+.login_fom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.wrap > form{
+    box-sizing: boder-box;
+    padding : 35px;
+}
+
+.login-title{
+    margin-bottom: 30px;
+}
+
+.form_input-text::placeholder{ color: #aaa; }
+
+.login-id, .login-pwd{
+    width: 200px; height: 30px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.login-id > input{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.login-pwd{
+    margin-bottom: 10px;
+}
+
+.login-pwd > input{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.login-id :hover{
+    border: none;
+}
+
+.login-pwd :hover{
+    border: none;
+}
+
+.login-id:focus{
+    outline: none;
+}
+
+.form_input-text{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 2px);
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c2c2c;
+    text-align: left;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.login-signup{
+    margin-top: 15px;
+}
+
+.login-btn[type="submit" i] {
+    outline: none;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 30px;
+    width: 100px;
+    color: #fff;
+}
+
+.sign-btn[type="button" i]{
+     outline: none;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 30px;
+    width: 100px;
+    color: #fff;
+}

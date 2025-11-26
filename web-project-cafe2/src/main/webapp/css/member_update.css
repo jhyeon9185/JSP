@@ -1,0 +1,76 @@
+/* 전체 레이아웃 */
+body {
+    font-family: 'Pretendard GOV', sans-serif;
+    background: #f5f6f7;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* 폼 컨테이너 */
+form {
+    width: 420px;
+    margin: 40px auto;
+    padding: 30px 35px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+/* 입력 필드 공통 */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all .2s ease;
+}
+
+/* 읽기전용 input */
+form input[readonly] {
+    background: #eee;
+    cursor: not-allowed;
+}
+
+/* 포커스 효과 */
+form input:focus {
+    border-color: #4e7cff;
+    box-shadow: 0 0 3px rgba(78, 124, 255, 0.4);
+}
+
+/* 버튼 */
+form input[type="submit"] {
+    width: 100%;
+    background: #4e7cff;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background: #3b66de;
+}
+
+/* label 스타일링을 원할 경우 */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #555;
+}

@@ -1,0 +1,16 @@
+*{margin: 0; padding: 0;}
+
+.main-login{
+    width: 100%; 
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.main-login-form{
+    width: 100%;
+}
+
+.main-login-title{
+    background-color: bisque;
+    color: #2c2c2c;
+}
